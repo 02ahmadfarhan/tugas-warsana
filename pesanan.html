@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!--css Sendiri-->
+  <style type="text/css">
+    body{
+      background-image:url(morocco-blue.png) ;
+    }
+  </style>
+  <!---->
+  <title>Pesanan</title>
+</head>
+<body>
+
+  <!--Navbar Awal-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <div class="container-fluid">
+    <img src="logo-kamping.jpg" width="35" class="rounded-circle">
+    <a class="navbar-brand" href="#">Happy Camping</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="utama2.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Product
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="produk.html">Tenda</a></li>
+            <li><a class="dropdown-item" href="produk-peralatan.html">Peralatan</a></li>
+            <li><a class="dropdown-item" href="produk-perlengkapan.html">Perlengkapan</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="pesanan.html">Checkout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontak.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profile</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+      <h1 class="text-center">Pesanan</h1>
+
+      <!--
+
+        nama lengkap
+        tanggal lahir
+        alamat email
+        nomor hp
+        alamat lengkap
+        tipe pesanan
+          sewa
+          beli
+        tipe pembayaran
+          alfamart
+          shoopepay
+          bank
+        menulis saya setuju 
+      -->
+
+      <!--Awal Kontak-->
+  <section id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label fw-bold">Nama Lengkap</label>
+              <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label fw-bold">Tanggal Pemesanan</label>
+              <input type="date" id="date">
+            </div>
+
+            <div class="mb-3">
+              <label for="name" class="form-label fw-bold">Alamat Email</label>
+              <input type="email" class="form-control" id="alamat" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+              <label for="name" class="form-label fw-bold">Nomor Hp</label>
+              <input class="form-control" type="text" aria-label="default input example">
+            </div>
+
+            <div class="mb-3">
+              <label for="name" class="form-label fw-bold">Alamat Lengkap</label>
+              <textarea class="form-control" id="alamat" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label>Tipe Pembayaran</label>
+              <select class="form-select" aria-label="Default select example">
+                <option value="1">Alfamart</option>
+                <option value="2">ShoopiePay</option>
+                <option value="3">Bank</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label>Tipe Pengiriman</label>
+              <select class="form-select" aria-label="Default select example">
+                <option value="1">JNE</option>
+                <option value="2">Sicepat</option>
+                <option value="3">GoSend</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-success" formaction="hasil-pesanan.html">Kirm</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Akhir Kontak-->
+
+
+  <!--Awal Footer-->
+    <footer class="bg-success text-white text-center p-3 mt-5">
+      <p>Created With by <a href="" class="text-white fw-bold text-decoration-none">Warsana & Aldi Primananda</a></p>
+    </footer>
+  <!--Akhir Footer-->
+
+</body>

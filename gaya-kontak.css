@@ -1,0 +1,12 @@
+body {
+  background-image: url("bg-kontakan2.jpg");
+  min-height: 200px;
+}
+
+.jumbotron{
+  padding: 2rem 1rem;
+}
+
+h1{
+  color: green;
+}
